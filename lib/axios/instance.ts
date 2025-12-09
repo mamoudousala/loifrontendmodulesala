@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export const axiosInstance = axios.create({
-    baseURL: "https://my-json-server.typicode.com/Espenvign/demo",
+    baseURL: "https://my-json-server.typicode.com/Mamoudousala/demo",
     timeout: 8000,
 });
 
