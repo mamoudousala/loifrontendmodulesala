@@ -1,7 +1,7 @@
 # RealEstateCare – Front-end prototype
 
 ## Inleiding
-Dit project is een front-end prototype voor de case RealEstateCare.  
+Dit project is een front-end prototype voor de RealEstateCare-case.
 De applicatie is bedoeld voor inspecteurs en beheerders en maakt het mogelijk om inspecties te bekijken, instellingen aan te passen en informatie op te zoeken in een knowledge base.
 
 Dit prototype is gemaakt voor de module Front-end frameworks.
