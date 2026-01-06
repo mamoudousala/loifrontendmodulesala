@@ -1,133 +1,43 @@
-# RealEstateCare – Front-end Prototype
-
+# RealEstateCare – Front-end prototype
 
 ## Inleiding
-Dit project is een werkend front-end prototype voor de case *RealEstateCare*. De applicatie ondersteunt inspecteurs en beheerders bij het bekijken en beheren van inspecties. Het prototype is ontwikkeld in het kader van de module *Front-end frameworks: Security, usability, best practices and style guides*.
+Dit project is een front-end prototype voor de case RealEstateCare.  
+De applicatie is bedoeld voor inspecteurs en beheerders en maakt het mogelijk om inspecties te bekijken, instellingen aan te passen en informatie op te zoeken in een knowledge base.
 
-De applicatie is gerealiseerd met React en Next.js en is online gehost. De broncode is beschikbaar via deze GitHub-repository.
+Dit prototype is gemaakt voor de module Front-end frameworks.
 
 ---
 
-## Gebruikte technologieën
-
-- **Framework:** React met Next.js
-- **Component library:** shadcn/ui
-- **Styling:** Tailwind CSS
-- **State management:** Zustand
-- **API-communicatie:** Axios
-- **Typevalidatie:** Zod
-- **Routing:** Next.js App Router
-- **Middleware:** Next.js middleware (`middleware.ts`)
-- **Dataformaat:** JSON
+## Gebruikte technieken
+- React met Next.js  
+- shadcn/ui en Tailwind CSS  
+- Zustand voor state management  
+- Axios voor het ophalen van data via een Web API  
+- Zod voor eenvoudige validatie  
+- JSON als dataformaat  
 
 ---
 
 ## Functionaliteit
-
 De applicatie bevat de volgende schermen:
-- Openstaande inspecties
-- Uitgevoerde inspecties
-- Instellingen
-- Knowledge base
+- Openstaande inspecties  
+- Uitgevoerde inspecties  
+- Instellingen  
+- Knowledge base  
 
-Navigatie tussen schermen verloopt via routing.  
-Data wordt opgehaald via een externe Web API en centraal beheerd in een store.
+Navigatie tussen de schermen verloopt via routing.  
+Data wordt opgehaald via een Web API en centraal beheerd.
 
-Daarnaast bevat de applicatie:
-- Een inlogscherm dat tweestapsauthenticatie simuleert
-- Beveiligde routes die alleen toegankelijk zijn na inloggen
-- Custom componenten
-- Componenten uit een externe UI-bibliotheek
-- Toepassing van de huisstijl van RealEstateCare
+Daarnaast bevat de applicatie een inlogscherm waarmee authenticatie wordt gesimuleerd.
 
 ---
 
-## Architectuur en ontwerpkeuzes
-
-### State management
-Voor state management is Zustand gebruikt. De store fungeert als centrale bron voor applicatiestatus en data en volgt het Singleton-principe. Hierdoor blijven data en UI-componenten gescheiden en overzichtelijk.
-
-### Asynchrone communicatie
-Data wordt opgehaald via een Web API met Axios. De communicatie verloopt asynchroon met promises en foutafhandeling. De opgehaalde JSON-data reflecteert de structuur en inhoud zoals beschreven in de case.
-
-### Typevalidatie
-Zod wordt ingezet om inkomende API-data te valideren. Hiermee wordt voorkomen dat ongeldige of incomplete data wordt gebruikt binnen de applicatie.
-
-### Middleware en routebeveiliging
-Voor het beveiligen van routes is gebruikgemaakt van Next.js middleware via een `middleware.ts`-bestand.  
-De middleware controleert of een gebruiker is ingelogd voordat toegang wordt verleend tot het dashboard en onderliggende pagina’s.
-
-De authenticatiestatus wordt beheerd via Zustand. Wanneer geen geldige loginstatus aanwezig is, wordt de gebruiker automatisch doorgestuurd naar het inlogscherm. Hierdoor is het niet mogelijk om beveiligde routes direct te benaderen via de URL zonder authenticatie.
+## Opmerkingen
+Dit is een prototype. Niet alle onderdelen zijn volledig uitgewerkt zoals in een productieomgeving.
 
 ---
 
-## Security
-
-Bij de ontwikkeling is rekening gehouden met algemene front-end beveiligingsprincipes, waaronder:
-
-- Beveiliging van routes via middleware
-- Centrale controle van authenticatiestatus
-- Validatie van API-data met Zod
-- Automatische escaping van content via React ter beperking van XSS-risico’s
-- Scheiding van data, state en presentatie
-
-Deze maatregelen sluiten aan bij relevante OWASP-richtlijnen voor client-side applicaties.
-
----
-
-## Usability
-
-Bij het ontwerp is rekening gehouden met de 10 heuristieken van Jakob Nielsen, waaronder:
-
-1. Zichtbaarheid van systeemstatus
-2. Consistentie in navigatie en interface
-3. Herkenbaarheid boven herinneren
-4. Beperking van fouten
-5. Duidelijke feedback
-6. Logische groepering van informatie
-7. Beperkte cognitieve belasting
-8. Voorspelbaar gedrag van componenten
-9. Visuele hiërarchie
-10. Eenduidige terminologie
-
----
-
-## Accessibility
-
-De applicatie houdt rekening met **WCAG 2.1 niveau A**, onder andere door:
-- Gebruik van semantische HTML
-- Toegankelijke formulierelementen
-- Correct gebruik van labels en aria-attributen
-- Voldoende kleurcontrast
-- Ondersteuning voor toetsenbordnavigatie
-
-Niet alle WCAG 2.1 AA-criteria zijn volledig geïmplementeerd. Uitgebreide screenreader-tests vallen buiten de scope van dit prototype.
-
----
-
-## Style guides en best practices
-
-Bij de ontwikkeling zijn de volgende richtlijnen toegepast:
-- Best practices van React en Next.js
-- Component-based architectuur
-- Scheiding van logica en presentatie
-- Herbruikbare componenten
-- Consistente naamgeving
-- Gebruik van Tailwind CSS volgens utility-first principes
-
----
-
-## Bekende beperkingen
-
-- Authenticatie is gesimuleerd en niet gekoppeld aan een externe identity provider
-- Autorisatie op basis van gebruikersrollen is beperkt
-- Error handling is functioneel maar niet volledig uitgewerkt
-- Volledige WCAG 2.1 AA-compliance is niet gerealiseerd
-
----
-
-## Installatie en gebruik
-
+## Project lokaal starten
 ```bash
 npm install
 npm run dev
