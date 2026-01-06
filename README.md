@@ -1,17 +1,17 @@
-# RealEstateCare: Front-end prototype
+# RealEstateCare – Front-end prototype
 
 ## Inleiding
-Dit project is een front-end prototype voor de RealEstateCare-case.
+Dit project is een front-end prototype voor de RealEstateCare-case.  
 De applicatie is bedoeld voor inspecteurs en beheerders en maakt het mogelijk om inspecties te bekijken, instellingen aan te passen en informatie op te zoeken in een knowledge base.
 
-Dit prototype is gemaakt voor de module Front-end frameworks.
+Dit prototype is gemaakt voor de module Front-end frameworks en dient vooral als oefenproject.
 
 ---
 
 ## Gebruikte technieken
 - React met Next.js  
 - shadcn/ui en Tailwind CSS  
-- Zustand voor state management  
+- Zustand voor het bijhouden van data  
 - Axios voor het ophalen van data via een Web API  
 - Zod voor eenvoudige validatie  
 - JSON als dataformaat  
@@ -33,7 +33,8 @@ Daarnaast bevat de applicatie een inlogscherm waarmee authenticatie wordt gesimu
 ---
 
 ## Opmerkingen
-Dit is een prototype. Niet alle onderdelen zijn volledig uitgewerkt zoals in een productieomgeving.
+Dit is een prototype. Niet alle onderdelen zijn volledig uitgewerkt zoals in een productieomgeving.  
+Tijdens het maken van dit project lag de focus vooral op het werkend krijgen van de basisfunctionaliteit.
 
 ---
 
