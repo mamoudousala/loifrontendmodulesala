@@ -1,4 +1,4 @@
-# RealEstateCare – Front-end prototype
+# RealEstateCare: Front-end prototype
 
 ## Inleiding
 Dit project is een front-end prototype voor de RealEstateCare-case.
